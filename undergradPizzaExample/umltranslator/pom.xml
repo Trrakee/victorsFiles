@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>edu.purdue.cs59000-12</groupId>
+  <artifactId>umltranslator</artifactId>
+ <!-- Update the version number every where using the pattern Major.minor.minor minor -->
+  <version>0.0.7</version>
+  <packaging>jar</packaging>
+  <name>umltranslator</name>
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!-- Use Java 1.8 -->
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+    <!-- Used for UNIT Testing -->
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <!-- Need to use 4.11 ? -->
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Logging -->
+    <dependency>
+	<groupId>log4j</groupId>
+	<artifactId>log4j</artifactId>
+	<version>1.2.17</version>
+</dependency>
+<!-- Java Parser -->
+    <dependency>
+    	<groupId>com.github.javaparser</groupId>
+    	<artifactId>javaparser-symbol-solver-core</artifactId>
+    	<version>3.5.19</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.github.javaparser</groupId>
+    	<artifactId>javaparser-core</artifactId>
+    	<version>3.5.19</version>
+    </dependency>
+  </dependencies>
+</project>

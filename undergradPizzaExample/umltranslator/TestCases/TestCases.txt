@@ -1,0 +1,1 @@
+This folder should be used for End to End use case's, not unit tests.

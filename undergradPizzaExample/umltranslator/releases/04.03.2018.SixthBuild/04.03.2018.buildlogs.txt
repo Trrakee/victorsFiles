@@ -1,0 +1,199 @@
+Started by user cs590Jenkins
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\CS5900-12MavenBuild
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/aaronmuir/CS509-12-SoftwareEngineering # timeout=10
+Fetching upstream changes from https://github.com/aaronmuir/CS509-12-SoftwareEngineering
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --progress https://github.com/aaronmuir/CS509-12-SoftwareEngineering +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/Build6^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/Build6^{commit}" # timeout=10
+Checking out Revision b624c5f74234641586bd40ace9c0424785127883 (refs/remotes/origin/Build6)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b624c5f74234641586bd40ace9c0424785127883
+Commit message: "Build6 Pom changes"
+First time build. Skipping changelog.
+No emails were triggered.
+Parsing POMs
+Modules changed, recalculating dependency graph
+Established TCP socket on 52441
+[umltranslator] $ "C:\Program Files\Java\jdk1.8.0_144/bin/java" -cp "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_\boot\plexus-classworlds-2.5.2.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_/conf/logging" jenkins.maven3.agent.Maven35Main "C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_" "C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.16.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar" 52441
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building umltranslator 0.0.6
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.5.19/javaparser-symbol-solver-core-3.5.19.pom
+
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.5.19/javaparser-symbol-solver-core-3.5.19.pom (5.0 kB at 7.6 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.5.19/javaparser-parent-3.5.19.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.5.19/javaparser-parent-3.5.19.pom (13 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.5.19/javaparser-symbol-solver-logic-3.5.19.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.5.19/javaparser-symbol-solver-logic-3.5.19.pom (4.9 kB at 112 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom (9.7 kB at 203 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.5.19/javaparser-symbol-solver-model-3.5.19.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.5.19/javaparser-symbol-solver-model-3.5.19.pom (4.7 kB at 122 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.5.19/javaparser-core-3.5.19.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.5.19/javaparser-core-3.5.19.pom (7.3 kB at 187 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/23.4-jre/guava-23.4-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/23.4-jre/guava-23.4-jre.pom (6.8 kB at 175 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/23.4-jre/guava-parent-23.4-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/23.4-jre/guava-parent-23.4-jre.pom (10.0 kB at 233 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (4.8 kB at 112 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom (965 B at 24 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom (1.6 kB at 31 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.0.18/error_prone_parent-2.0.18.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.0.18/error_prone_parent-2.0.18.pom (5.0 kB at 140 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom (2.8 kB at 77 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom (2.5 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom (4.4 kB at 104 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom (24 kB at 427 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (4.8 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.5.19/javaparser-symbol-solver-core-3.5.19.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.5.19/javaparser-symbol-solver-logic-3.5.19.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/23.4-jre/guava-23.4-jre.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.5.19/javaparser-symbol-solver-model-3.5.19.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.5.19/javaparser-symbol-solver-model-3.5.19.jar (7.6 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.5.19/javaparser-symbol-solver-core-3.5.19.jar (365 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.5.19/javaparser-symbol-solver-logic-3.5.19.jar (17 kB at 89 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar (12 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar (740 kB at 2.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.5.19/javaparser-core-3.5.19.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar (8.8 kB at 23 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar (33 kB at 78 kB/s)
+
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar (3.5 kB at 6.9 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/23.4-jre/guava-23.4-jre.jar (2.7 MB at 4.8 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.5.19/javaparser-core-3.5.19.jar (1.1 MB at 1.9 MB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ umltranslator ---
+[INFO] Deleting C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ umltranslator ---
+
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ umltranslator ---
+
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\classes
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ umltranslator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ umltranslator ---
+
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ umltranslator ---
+
+[INFO] Surefire report directory: C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Running edu.purdue.cs59000.logging.UMLJarLoggerUnitTest
+2018-04-03 00:06:45,700 INFO  [UMLJarLoggerUnitTest] abcdefg
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
+Running edu.purdue.cs59000.umltranslator.exceptions.UMLSDInformationExceptionUnitTest
+2018-04-03 00:06:45,708 ERROR [UMLSequenceDiagramException] UMLSDInformationException: There is not enough information available in the sequence diagram to generate a representation or source code
+2018-04-03 00:06:45,708 ERROR [UMLSequenceDiagramException] UMLSDInformationException: There is not enough information available in the sequence diagram to generate a representation or source code
+2018-04-03 00:06:45,708 ERROR [UMLSequenceDiagramException] UMLSDInformationException: There is not enough information available in the sequence diagram to generate a representation or source code
+2018-04-03 00:06:45,708 ERROR [UMLSequenceDiagramException] UMLSDInformationException: There is not enough information available in the sequence diagram to generate a representation or source code
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.purdue.cs59000.umltranslator.message.UMLCreateMessageTest
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+UMLSequenceDiagramException: UMLSDStructureException: Could not get invoking class. Error in Java representation structure.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.message.UMLMessageArgumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.message.UMLMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.message.UMLReturnMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.message.UMLSynchronousMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.UMLActivationBoxTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.UMLActorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.UMLClassTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.purdue.cs59000.umltranslator.umlcontainer.UMLAlternativesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.umlcontainer.UMLConditionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.umlcontainer.UMLContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.umlcontainer.UMLElseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.umlcontainer.UMLLoopTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000.umltranslator.UMLLifelineUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.purdue.cs59000_umlsequencediagram.umlcodehandler.UMLSDClassHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ umltranslator ---
+
+[INFO] Building jar: C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.6.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ umltranslator ---
+[INFO] Installing C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.6.jar to C:\WINDOWS\system32\config\systemprofile\.m2\repository\edu\purdue\cs59000-12\umltranslator\0.0.6\umltranslator-0.0.6.jar
+[INFO] Installing C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml to C:\WINDOWS\system32\config\systemprofile\.m2\repository\edu\purdue\cs59000-12\umltranslator\0.0.6\umltranslator-0.0.6.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.939 s
+[INFO] Finished at: 2018-04-03T00:06:49-05:00
+
+[INFO] Final Memory: 23M/218M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+
+[JENKINS] Archiving C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml to edu.purdue.cs59000-12/umltranslator/0.0.6/umltranslator-0.0.6.pom
+[JENKINS] Archiving C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.6.jar to edu.purdue.cs59000-12/umltranslator/0.0.6/umltranslator-0.0.6.jar
+channel stopped
+
+Email was triggered for: Always
+Sending email for trigger: Always
+Request made to compress build log
+An attempt to send an e-mail to empty list of recipients, ignored.
+Finished: SUCCESS

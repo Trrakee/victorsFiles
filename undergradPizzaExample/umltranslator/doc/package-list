@@ -1,0 +1,7 @@
+edu.purdue.cs59000.logging
+edu.purdue.cs59000.umltranslator
+edu.purdue.cs59000.umltranslator.exceptions
+edu.purdue.cs59000.umltranslator.javaparser
+edu.purdue.cs59000.umltranslator.message
+edu.purdue.cs59000.umltranslator.umlcodehandler
+edu.purdue.cs59000.umltranslator.umlcontainer

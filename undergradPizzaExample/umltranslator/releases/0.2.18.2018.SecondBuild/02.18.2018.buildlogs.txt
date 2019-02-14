@@ -1,0 +1,78 @@
+Started by user cs590Jenkins
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\CS5900-12MavenBuild
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/aaronmuir/CS509-12-SoftwareEngineering # timeout=10
+Fetching upstream changes from https://github.com/aaronmuir/CS509-12-SoftwareEngineering
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --progress https://github.com/aaronmuir/CS509-12-SoftwareEngineering +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 8e7b1cc7769a19693e14d39c9ae9397833c9524d (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8e7b1cc7769a19693e14d39c9ae9397833c9524d
+Commit message: "Merge pull request #20 from aaronmuir/UmlSequenceDiagramMain"
+ > git.exe rev-list --no-walk 53b495ceee86a1c58fa65e4639ed66eba14b7fcd # timeout=10
+No emails were triggered.
+Parsing POMs
+Established TCP socket on 51722
+[umltranslator] $ "C:\Program Files\Java\jdk1.8.0_144/bin/java" -cp "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_\boot\plexus-classworlds-2.5.2.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_/conf/logging" jenkins.maven3.agent.Maven35Main "C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_" "C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.16.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar" 51722
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml clean install -DskipTests=true
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building umltranslator 0.0.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ umltranslator ---
+[INFO] Deleting C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ umltranslator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ umltranslator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ umltranslator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ umltranslator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ umltranslator ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ umltranslator ---
+[INFO] Building jar: C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.2.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ umltranslator ---
+[INFO] Installing C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.2.jar to C:\WINDOWS\system32\config\systemprofile\.m2\repository\edu\purdue\cs59000-12\umltranslator\0.0.2\umltranslator-0.0.2.jar
+[INFO] Installing C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml to C:\WINDOWS\system32\config\systemprofile\.m2\repository\edu\purdue\cs59000-12\umltranslator\0.0.2\umltranslator-0.0.2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.079 s
+[INFO] Finished at: 2018-02-18T15:56:46-06:00
+[INFO] Final Memory: 19M/206M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml to edu.purdue.cs59000-12/umltranslator/0.0.2/umltranslator-0.0.2.pom
+[JENKINS] Archiving C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.2.jar to edu.purdue.cs59000-12/umltranslator/0.0.2/umltranslator-0.0.2.jar
+channel stopped
+Email was triggered for: Always
+Sending email for trigger: Always
+Request made to compress build log
+Not sending mail to unregistered user mhruskocy@gmail.com because your SCM claimed this was associated with a user ID ‘mhruskocy' which your security realm does not recognize; you may need changes in your SCM plugin
+Not sending mail to unregistered user syarusin@pnw.edu because your SCM claimed this was associated with a user ID ‘syarusin' which your security realm does not recognize; you may need changes in your SCM plugin
+Not sending mail to unregistered user andyyxwang@gmail.com because your SCM claimed this was associated with a user ID ‘andyyxwang' which your security realm does not recognize; you may need changes in your SCM plugin
+Sending email to: mhruskoc@pnw.edu mhruskocy@gmail.com
+Connection error sending email, retrying once more in 10 seconds...
+Connection error sending email, retrying once more in 10 seconds...
+Failed after second try sending email
+Finished: SUCCESS

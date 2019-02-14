@@ -1,0 +1,12 @@
+    Build3 into Master (commit: fcd35c0) (detail / githubweb)
+    pom changes to jar (commit: 31d794d) (detail / githubweb)
+    added addSymbol, addSymbols, getSymbols, removeSymbol, and removeSymbols (commit: 07a7c17) (detail / githubweb)
+    taking out the trash (commit: 91d4253) (detail / githubweb)
+    updated UMLSequenceDiagram constructor to be public (commit: 69471c7) (detail / githubweb)
+    change remove symbols to be unsupported until final implementation (commit: 1234226) (detail / githubweb)
+    Added TestEngineer Project, to be used to test Java Source code (commit: 6a0bfe7) (detail / githubweb)
+    Modified undergrad example and generated the source code manually (commit: aa64d27) (detail / githubweb)
+    Moved pizza shop example to test project (commit: eabeae5) (detail / githubweb)
+    umlcontainer extends umlsymbol (commit: d0a28c0) (detail / githubweb)
+    updated pizza shop example diagram (commit: 2473db4) (detail / githubweb)
+

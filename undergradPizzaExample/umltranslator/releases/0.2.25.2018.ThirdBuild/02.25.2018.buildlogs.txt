@@ -1,0 +1,94 @@
+Started by user cs590Jenkins
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\CS5900-12MavenBuild
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/aaronmuir/CS509-12-SoftwareEngineering # timeout=10
+Fetching upstream changes from https://github.com/aaronmuir/CS509-12-SoftwareEngineering
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --progress https://github.com/aaronmuir/CS509-12-SoftwareEngineering +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 5ac8d7036250e514c962da32f285c2e05cea8a99 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 5ac8d7036250e514c962da32f285c2e05cea8a99
+Commit message: "Merge pull request #42 from aaronmuir/UmlLoggerChanges"
+ > git.exe rev-list --no-walk 8e7b1cc7769a19693e14d39c9ae9397833c9524d # timeout=10
+No emails were triggered.
+Parsing POMs
+Established TCP socket on 65146
+[umltranslator] $ "C:\Program Files\Java\jdk1.8.0_144/bin/java" -cp "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_\boot\plexus-classworlds-2.5.2.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_/conf/logging" jenkins.maven3.agent.Maven35Main "C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\_Maven_Installer_" "C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.16.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar" 65146
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building umltranslator 0.0.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ umltranslator ---
+[INFO] Deleting C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ umltranslator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ umltranslator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ umltranslator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ umltranslator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ umltranslator ---
+[INFO] Surefire report directory: C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.purdue.cs59000.logging.UMLJarLoggerUnitTest
+2018-02-25 08:22:34,423 INFO  [UMLJarLoggerUnitTest] abcdefg
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Running edu.purdue.cs59000_12.umsequenceDiagram.UMLSequenceDiagramUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ umltranslator ---
+[INFO] Building jar: C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.2.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ umltranslator ---
+[INFO] Installing C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.2.jar to C:\WINDOWS\system32\config\systemprofile\.m2\repository\edu\purdue\cs59000-12\umltranslator\0.0.2\umltranslator-0.0.2.jar
+[INFO] Installing C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml to C:\WINDOWS\system32\config\systemprofile\.m2\repository\edu\purdue\cs59000-12\umltranslator\0.0.2\umltranslator-0.0.2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.034 s
+[INFO] Finished at: 2018-02-25T08:22:36-06:00
+[INFO] Final Memory: 20M/301M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\pom.xml to edu.purdue.cs59000-12/umltranslator/0.0.2/umltranslator-0.0.2.pom
+[JENKINS] Archiving C:\GITRepos\CS509-12-SoftwareEngineering\umltranslator\target\umltranslator-0.0.2.jar to edu.purdue.cs59000-12/umltranslator/0.0.2/umltranslator-0.0.2.jar
+Sending e-mails to: mhruskoc@pnw.edu mhruskocy@gmail.com amuir@purdue.edu wang3688@pnw.edu golla@pnw.edu zhangrj@pnw.edu syarusin@pnw.edu tmandada@pnw.edu admin@beulahworks.com ymalinen@pnw.edu
+channel stopped
+Sending e-mails to: mhruskoc@pnw.edu mhruskocy@gmail.com amuir@purdue.edu wang3688@pnw.edu golla@pnw.edu zhangrj@pnw.edu syarusin@pnw.edu tmandada@pnw.edu admin@beulahworks.com ymalinen@pnw.edu
+Email was triggered for: Always
+Sending email for trigger: Always
+Request made to compress build log
+Not sending mail to unregistered user andyyxwang@gmail.com because your SCM claimed this was associated with a user ID ‘andyyxwang' which your security realm does not recognize; you may need changes in your SCM plugin
+Not sending mail to unregistered user syarusin@pnw.edu because your SCM claimed this was associated with a user ID ‘syarusin' which your security realm does not recognize; you may need changes in your SCM plugin
+Not sending mail to unregistered user siike92@hotmail.com because your SCM claimed this was associated with a user ID ‘siike92' which your security realm does not recognize; you may need changes in your SCM plugin
+Not sending mail to unregistered user aaronmuir@gmail.com because your SCM claimed this was associated with a user ID ‘aaronmuir' which your security realm does not recognize; you may need changes in your SCM plugin
+Not sending mail to unregistered user mhruskocy@gmail.com because your SCM claimed this was associated with a user ID ‘mhruskocy' which your security realm does not recognize; you may need changes in your SCM plugin
+An attempt to send an e-mail to empty list of recipients, ignored.
+Finished: SUCCESS
